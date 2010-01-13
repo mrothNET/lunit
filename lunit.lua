@@ -383,6 +383,10 @@ do
     return setrunner(runner)
   end
 
+  function lunit.getrunner()
+    return testrunner
+  end
+
   function report(event, ...)
     local f = testrunner and testrunner[event]
     if is_function(f) then
@@ -498,6 +502,10 @@ end
 function lunit.runtest(tcname, testname)
   orig_assert( is_string(tcname) )
   orig_assert( is_string(testname) )
+
+  if (not getrunner()) then
+    loadrunner("lunit.console")
+  end
 
   local function callit(context, func)
     if func then
@@ -631,7 +639,6 @@ function main(argv)
 
   local testpatterns = nil
   local doloadonly = false
-  local runner = nil
 
   local i = 0
   while i < #argv do
@@ -642,7 +649,7 @@ function main(argv)
     elseif arg == "--runner" or arg == "-r" then
       local optname = arg; i = i + 1; arg = argv[i]
       checkarg(optname, arg)
-      runner = arg
+      loadrunner(arg)
     elseif arg == "--test" or arg == "-t" then
       local optname = arg; i = i + 1; arg = argv[i]
       checkarg(optname, arg)
@@ -657,8 +664,6 @@ function main(argv)
       loadtestcase(arg)
     end
   end
-
-  loadrunner(runner or "lunit-console")
 
   if doloadonly then
     return loadonly()

@@ -51,7 +51,7 @@
 
 require "lunit"
 
-module( "lunit-console", package.seeall )
+module( "lunit.console", package.seeall )
 
 
 local function printformat(format, ...)

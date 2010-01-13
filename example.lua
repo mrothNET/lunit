@@ -38,3 +38,6 @@ function test2()
   foobar = string.sub(foobar, -5)
   assert_equal("World", foobar)
 end
+
+
+lunit.run()
