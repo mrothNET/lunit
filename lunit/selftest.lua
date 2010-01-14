@@ -70,8 +70,10 @@ function test()
   }
 
   local tablenames = {
-    "lunit", "stats", "console", "selftest"
+    "stats", "console", "selftest"
   }
+
+  assert_table(lunit, "Missing lunit namespace")
 
   for _, funcname in ipairs(funcnames) do
     assert_function( lunit[funcname], "Public function missing: "..funcname )
