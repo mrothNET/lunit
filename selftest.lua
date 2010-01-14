@@ -1,3 +1,4 @@
+require "lunit"
 require "lunit.selftest"
 
-lunit.run()
+lunit.main(...)
