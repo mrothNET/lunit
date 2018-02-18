@@ -38,14 +38,14 @@ https://www.mroth.net/lunit
 - lunit no longer depends on `lunit.sh`. The script moved to
   the extra-directory.
 
-#### 2008-01-05 / Release 0.5
+####  2009-11-05 / Release 0.5
 
 - New test function `assert_error_match()`.
 - lunit shell script returns an error code on failed tests.
 - Be more compatible with Darwin / Mac OS X.
 - Bug fixes.
 
-#### 2004-08-22 / Release 0.4
+#### 2008-01-05 / Release 0.4
 
 - Mostly complete rewrite.
 - Lua-5.1 only.
