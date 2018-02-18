@@ -1,6 +1,4 @@
-# lunit
-
-## Unit Testing Framework for Lua.
+# lunit - Unit Testing Framework for Lua.
 
 * Provides 27 assert functions, and a few misc functions
   for usage in an easy unit testing framework.
@@ -10,20 +8,54 @@
 
 
 
-### Actual state
+## Actual state
 
 This package is not maintained anymore. It is here for pure
 historically reasons for your interest.
 
 
 
-### Homepage
+## Example
+
+Source: `example.lua`:
+
+	require "lunit"
+
+	module( "my_testcase", lunit.testcase )
+
+	function test_success()
+	  assert_false( false, "This test never fails.")
+	end
+
+	function test_failure()
+	  fail( "This test always fails!" )
+	end
+	
+	lunit.main(...)
+
+Run tests:
+
+	# lua example.lua 
+	    F.
+
+	2 Assertions checked.
+
+	  1) Failure (my_testcase.test_failure):
+	example.lua:10: failure
+	example.lua:10: This test always fails!
+
+	Testsuite finished (1 passed, 1 failed, 0 errors).
+
+
+
+
+## Homepage
 
 https://www.mroth.net/lunit
 
 
 
-### Source code
+## Source code
 
 [GitHub repository:](https://github.com/mrothnet/lunit)
 
@@ -71,7 +103,7 @@ https://www.mroth.net/lunit
 
 
 
-### Contact
+## Contact
 
 Send email to: mail@mroth.net
 
