@@ -1,12 +1,10 @@
 #! /bin/sh
 
-#   This file is part of lunit 0.5.
+#   This file is part of lunit.
 #
-#   For Details about lunit look at: http://www.mroth.net/lunit/
+#   For Details about lunit look at: https://www.mroth.net/lunit/
 #
-#   Author: Michael Roth <mroth@nessie.de>
-#
-#   Copyright (c) 2004-2009 Michael Roth <mroth@nessie.de>
+#   Copyright (c) 2004-2009 Michael Roth <mail@mroth.net>
 #
 #   Permission is hereby granted, free of charge, to any person
 #   obtaining a copy of this software and associated documentation
