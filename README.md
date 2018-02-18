@@ -35,13 +35,13 @@ https://www.mroth.net/lunit
 
 #### Up to today
 
-- Lunit no longer depends on lunit.sh. The script moved to
+- lunit no longer depends on `lunit.sh`. The script moved to
   the extra-directory.
 
 #### 2008-01-05 / Release 0.5
 
-- New test function assert_error_match().
-- Lunit shell script returns an error code on failed tests.
+- New test function `assert_error_match()`.
+- lunit shell script returns an error code on failed tests.
 - Be more compatible with Darwin / Mac OS X.
 - Bug fixes.
 
@@ -52,7 +52,7 @@ https://www.mroth.net/lunit
 
 ####  2004-08-22 / Release 0.3 (alpha)
 
-- New function lunit.wrap() to wrap a single function in a
+- New function `lunit.wrap()` to wrap a single function in a
   complete test case.
 - Now a backtrace is printed, if an error or failure occurs
   in a test case.
@@ -60,8 +60,8 @@ https://www.mroth.net/lunit
 #### 2004-08-18 / Release 0.2 (alpha)
 
 - The test suite consists now of approximately 630 assertions.
-- Fixed an ugly bug in lunit.assert()! Testcases for 
-  lunit.assert() added.
+- Fixed an ugly bug in `lunit.assert()`! Testcases for 
+  `lunit.assert()` added.
 - Now all assert functions return the actual value on success.
 
 
