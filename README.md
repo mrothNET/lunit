@@ -57,9 +57,9 @@ https://www.mroth.net/lunit
 
 ## Source code
 
-[GitHub repository:](https://github.com/mrothnet/lunit)
+[GitHub repository:](https://github.com/mrothNET/lunit)
 
-	git clone https://github.com/mrothnet/lunit.git
+	git clone https://github.com/mrothNET/lunit.git
 
 
 
